@@ -1,0 +1,28 @@
+settings:
+  lang-format: '%lang%.yml'
+
+strategy:
+  # default
+  # minecraft
+  # forced
+  language-provider: minecraft
+  default-language: en_US
+  forced-language: en_US
+
+storage:
+  # mysql
+  # sqlite
+  # mongodb
+  # yaml
+  type: mongodb
+  host: 'localhost:27017'
+  # This option is required for mongodb if you don't set
+  # the database name in the uri
+  database: 'languages'
+  user: root
+  password: root
+  prefix: 'languages_'
+  # mongodb option
+  uri: ''
+  # sql driver
+  driver: 'com.mysql.jdbc.Driver'
